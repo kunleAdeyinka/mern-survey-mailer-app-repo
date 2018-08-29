@@ -37,7 +37,7 @@ billingRoutes(app);
 
 if(process.env.NODE_ENV === 'production'){
   //makes sure that in priduction express serves up the main.js/main.css file
-  ap.use(express.static('client/build'));
+  app.use(express.static('client/build'));
 
   //express serves the index.html file if it doesn't recognize the route
   const path = require('path');
