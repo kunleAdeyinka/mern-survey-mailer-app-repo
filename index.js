@@ -7,8 +7,9 @@ const keys = require('./config/keys');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
-
+const surveyRoutes = require('./routes/surveyRoutes');
 
 //connect to mondodb
 mongoose.connect(keys.mongoURI);
@@ -33,7 +34,7 @@ app.use(passport.session());
 //create route handlers
 authRoutes(app);
 billingRoutes(app);
-
+surveyRoutes(app);
 
 if(process.env.NODE_ENV === 'production'){
   //makes sure that in priduction express serves up the main.js/main.css file
