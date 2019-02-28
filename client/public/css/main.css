@@ -1,0 +1,32 @@
+.shift {
+    margin-left: 5px;
+}
+
+.jumbotron {
+    background: url('https://lh3.googleusercontent.com/-rFgdRb3rKrI/VU8_5IkHXNI/AAAAAAAAII4/G63WUHtQAhk/w2664-h2664/15%2B-%2B21.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    padding-top: 80px;
+    min-height: 720px;
+}
+
+.jumbotron .desc h1 {
+    font-weight: 100;
+    line-height: 1.6;
+    font-size: 3.85rem;
+    color: #FFFFFF;
+    padding-top: 100px;
+}
+
+.jumbotron .desc h2 {
+    font-weight: 100;
+    font-size: 2.00rem;
+    color: #FFFFFF;
+}
+
+.jumbotron .img-desc {
+    max-width: 240%;
+    margin-top: 150px;
+    margin-left: -40px;
+}

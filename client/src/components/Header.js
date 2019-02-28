@@ -12,7 +12,7 @@ class Header extends Component {
         return;
       case false:
         return (
-          <li><a href="/auth/google">Login With Google</a></li>
+          <li><a className="waves-effect waves-light btn" href="/auth/google">Login with Google</a></li>
         );
       default:
         return [
@@ -28,7 +28,7 @@ class Header extends Component {
     return (
       <nav>
        <div className="nav-wrapper">
-         <Link to={this.props.auth ? '/surveys' : '/'} className="left brand-logo">Survey Mailer</Link>
+         <Link to={this.props.auth ? '/surveys' : '/'} className="left brand-logo"><i className="fas fa-mail-bulk shift"></i>Survey Mailer</Link>
          <ul className="right">
            {this.renderContent()}
          </ul>
